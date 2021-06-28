@@ -1,0 +1,76 @@
+/* CSS Pallette
+--midnight-blue: #031a6b;
+--indigo-dye: #033860;
+--cg-blue: #087ca7;
+--yale-blue: #004385;
+--cerulean-crayola: #05b2dc; */
+
+body, html {
+    height: 100vh;
+    background-color:rgb(103, 225, 255);
+    background-color:rgba(32, 150, 180, 0.2);
+}
+
+a {
+    text-decoration: none;
+    color: #087ca7;
+}
+
+a:hover {
+    color: #004385;
+}
+
+#wrapper header {
+    background: url(nature_placeholder.jpg) no-repeat center center fixed;
+    background-size: cover;
+     /* TODO: Change to Drago */
+    min-height: 500px;
+    padding: 4px;
+    border-radius: 25px;
+    background-color: #05b2dc;
+}
+
+#wrapper header > div {
+    border: 1px solid #031a6b;
+    background-color: rgb(5, 178, 220);
+    background-color: rgba(5, 178, 220, 0.6);
+    border-radius: 15px;
+    width: 50%;
+    margin: auto;
+    text-align: center;
+    margin-top: 25px;
+}
+
+#wrapper header > div h2 {
+    font-size: 3em;
+}
+
+#wrapper > section {
+    min-height: 100vh;
+    padding: 20px;
+    background-size: cover;
+    background-position: center center;
+}
+
+#wrapper > section article {
+    background-color: rgb(32, 150, 180);
+    background-color: rgba(32, 150, 180, 0.6);
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 20px;
+}
+
+#navbar {
+    text-align: center;
+}
+
+footer {
+    background-color: pink;
+    padding: 15px;
+    margin-top: 5px;
+    border-radius: 15px;
+}
+
+#willkommen {
+    background-image: url(mama_placeholder.jpg);
+}
