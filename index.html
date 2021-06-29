@@ -98,7 +98,30 @@
         <section id="kontakt">
             <article>
                 <h2>Kontakt</h2>
-                <p>A form where you can enter your infomation and get in touch with Ana Maria.</p>
+                <p>If you would like to get in touch with our clinic we will require some basic information from you.
+                </p>
+                <form>
+                    <div class="row">
+                        <label for="name">Name: </label>
+                        <input type="text" name="name" placeholder="Dein Name">
+                    </div>
+                    <div class="row">
+                        <label for="email">Email: </label>
+                        <input type="email" name="email" placeholder="Dein Email">
+                    </div>
+                    <div class="row">
+                        <label for="handy">Handy: </label>
+                        <input type="text" name="handy" placeholder="Handy Number">
+                    </div>
+                    <div class="row">
+                        <label for="insurance">Insurance Type: </label>
+                        <input type="radio" name="insurance" value="National"><label for="national">National</label>
+                        <input type="radio" name="insurance" value="Private"><label for="private">Private</label>
+                    </div>
+                    <div class="row">
+                        <button type="submit">Kontakt Dr. Ana Maria</button>
+                    </div>
+                </form>
             </article>
         </section>
         <footer>

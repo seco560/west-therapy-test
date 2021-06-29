@@ -136,3 +136,41 @@ footer {
 #kontakt {
     background-image: url(nature_placeholder.jpg);
 }
+
+#kontakt form {
+    margin: 0 auto;
+    max-width: 20vw;
+    border: 1px solid #ddd;
+    padding: 20px;
+    border-radius: 20px;
+    background-color: #05b2dc;
+}
+
+#kontakt label {
+    display: block;
+    width: 100%;
+    text-align: left;
+    margin-bottom: 20px;
+    color: white;
+    font-size: 1.2em;
+}
+
+#kontakt .row {
+    margin: 20px auto;
+    padding: 0 50px;
+}
+
+#kontakt input {
+    width: 100%;
+    font-size: 1.2em;
+    height: 55px;
+    border-radius: 10px;
+    padding-left: 10px;
+}
+
+#kontakt button {
+    padding: 15px;
+    width: 100%;
+    font-size: 1.4em;
+    color: #004385;
+}
