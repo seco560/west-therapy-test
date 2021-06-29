@@ -5,6 +5,10 @@
 --yale-blue: #004385;
 --cerulean-crayola: #05b2dc; */
 
+* {
+    box-sizing: border-box;
+}
+
 body, html {
     height: 100vh;
     background-color:rgb(103, 225, 255);
@@ -24,7 +28,7 @@ a:hover {
     background: url(nature_placeholder.jpg) no-repeat center center fixed;
     background-size: cover;
      /* TODO: Change to Drago */
-    min-height: 500px;
+    min-height: 800px;
     padding: 4px;
     border-radius: 25px;
     background-color: #05b2dc;
@@ -41,6 +45,11 @@ a:hover {
     margin-top: 25px;
 }
 
+#wrapper header > #logo {
+    background-color: pink;
+    width: 20%;
+}
+
 #wrapper header > div h2 {
     font-size: 3em;
 }
@@ -48,16 +57,19 @@ a:hover {
 #wrapper > section {
     min-height: 100vh;
     padding: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
     background-size: cover;
     background-position: center center;
 }
 
 #wrapper > section article {
     background-color: rgb(32, 150, 180);
-    background-color: rgba(32, 150, 180, 0.6);
+    background-color: rgba(32, 150, 180, 0.8);
     padding: 10px;
     margin-top: 10px;
     border-radius: 20px;
+    min-height: 500px;
 }
 
 #navbar {
@@ -73,4 +85,54 @@ footer {
 
 #willkommen {
     background-image: url(mama_placeholder.jpg);
+}
+
+#arzt {
+    background-image: url(nature_placeholder.jpg);
+}
+
+#arzt img {
+    max-width: 25vw;
+    box-shadow: 3px 3px 8px 0px rgba(0,0,0,0.3);
+    border: 2px solid #000;
+    margin: 10px;
+}
+
+#behandlungen {
+    background-image: url(nature_placeholder.jpg);
+}
+
+#behandlungen ol {
+    margin: auto;
+    padding: 0;
+    list-style-type: none;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+
+#behandlungen ol li {
+    margin: 10px;
+    max-width: 35vw;
+    text-align: center;
+    background-color: rgb(255,255,255);
+    background-color: rgba(255,255,255, 0.6);
+    border-radius: 5%;
+}
+
+#behandlungen ol li img {
+    max-width: 25vw;
+    box-shadow: 3px 3px 8px 0px rgba(0,0,0,0.3);
+    border: 2px solid #000;
+    margin: 10px;
+}
+
+#adresse {
+    background-image: url(nature_placeholder.jpg);
+}
+
+#kontakt {
+    background-image: url(nature_placeholder.jpg);
 }
