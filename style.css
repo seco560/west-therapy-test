@@ -5,14 +5,16 @@
 --yale-blue: #004385;
 --cerulean-crayola: #05b2dc; */
 
+@import url('https://fonts.googleapis.com/css2?family=Merriweather&display=swap');
+
 * {
     box-sizing: border-box;
 }
 
 body, html {
     height: 100vh;
-    background-color:rgb(103, 225, 255);
-    background-color:rgba(32, 150, 180, 0.2);
+    background-color:rgb(0, 7, 110);
+    font-family: 'Merriweather';
 }
 
 a {
@@ -22,6 +24,10 @@ a {
 
 a:hover {
     color: #004385;
+}
+
+#wrapper {
+    margin-top: 60px;
 }
 
 #wrapper header {
@@ -42,7 +48,7 @@ a:hover {
     width: 50%;
     margin: auto;
     text-align: center;
-    margin-top: 25px;
+    margin-top: 30px;
 }
 
 #wrapper header > #logo {
@@ -74,13 +80,33 @@ a:hover {
 
 #navbar {
     text-align: center;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    display: block;
+    width: 100%;
+    z-index: 100;
+    height: 30px;
+    padding-left: 10px;
+    padding-right: 10px;
 }
 
-footer {
-    background-color: pink;
-    padding: 15px;
-    margin-top: 5px;
-    border-radius: 15px;
+#navbar nav {
+    display: flex;
+}
+
+#navbar nav a {
+    flex: 0 0 20vw;
+    text-align: center;
+    font-size: 2em;
+    background-color: rgb(3, 56, 96);
+    background-color: rgba(3, 56, 96, 0.7);
+    border-radius: 12px;
+}
+
+#navbar nav a:hover {
+    background-color: rgb(0, 133, 71);
+    background-color: rgba(0, 133, 71, 0.7);
 }
 
 #willkommen {
@@ -139,7 +165,7 @@ footer {
 
 #kontakt form {
     margin: 0 auto;
-    max-width: 20vw;
+    max-width: 30vw;
     border: 1px solid #ddd;
     padding: 20px;
     border-radius: 20px;
@@ -162,15 +188,33 @@ footer {
 
 #kontakt input {
     width: 100%;
-    font-size: 1.2em;
-    height: 55px;
+    font-size: 1.3em;
+    height: 30px;
     border-radius: 10px;
     padding-left: 10px;
+}
+
+#kontakt .radiobtn {
+    height: 18px;
 }
 
 #kontakt button {
     padding: 15px;
     width: 100%;
-    font-size: 1.4em;
+    font-size: 1.3em;
     color: #004385;
+    border-radius: 10px;
+}
+
+#footer {
+    background-color: #087ca7;
+    padding: 15px;
+    margin-top: 5px;
+    border-radius: 15px;
+    text-align: center;
+    min-height: 50px;
+}
+
+@media all and (max-width: 640px) {
+    
 }

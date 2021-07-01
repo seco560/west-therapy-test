@@ -100,31 +100,32 @@
                 <h2>Kontakt</h2>
                 <p>If you would like to get in touch with our clinic we will require some basic information from you.
                 </p>
-                <form>
+                <form method="POST" enctype="multipart/form-data" name="Kontakt Form">
                     <div class="row">
-                        <label for="name">Name: </label>
+                        <label for="name"><strong>Name:</strong> </label>
                         <input type="text" name="name" placeholder="Dein Name">
                     </div>
                     <div class="row">
-                        <label for="email">Email: </label>
+                        <label for="email"><strong>Email:</strong> </label>
                         <input type="email" name="email" placeholder="Dein Email">
                     </div>
                     <div class="row">
-                        <label for="handy">Handy: </label>
-                        <input type="text" name="handy" placeholder="Handy Number">
+                        <label for="handy"><strong>Handy Number: </strong></label>
+                        <input type="text" name="handy" placeholder="Dein Number">
                     </div>
                     <div class="row">
-                        <label for="insurance">Insurance Type: </label>
-                        <input type="radio" name="insurance" value="National"><label for="national">National</label>
-                        <input type="radio" name="insurance" value="Private"><label for="private">Private</label>
+                        <label for="insurance"><strong>Insurance Typ:</strong></label>
+                    <div class="row">
+                        <label for="national">National<input type="radio" name="insurance" value="National" class="radiobtn"></label>
+                        <label for="private">Privat<input type="radio" name="insurance" value="Private" class="radiobtn"></label>
                     </div>
                     <div class="row">
-                        <button type="submit">Kontakt Dr. Ana Maria</button>
+                        <button type="submit" onclick="location.href='mailto:secovlad@gmail.com';">Kontakt Dr. Ana Maria</button>
                     </div>
                 </form>
             </article>
         </section>
-        <footer>
+        <footer id="footer">
             &copy; Psychoterapie im Westen Klinik 2021, Aachen, Deutschland | Website by Seco Vlad
         </footer>
     </div>
