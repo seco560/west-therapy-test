@@ -18,6 +18,7 @@
             <a href="#behandlungen">Behandlungen</a>
             <a href="#adresse">Adresse</a>
             <a href="#kontakt">Kontakt</a>
+            <a href="#gdpr-notiz">GDPR</a>
         </nav>
     </div>
     <div id="wrapper">
@@ -27,7 +28,7 @@
             </div>
             <div>
                 <h2>
-                    Psychotherapie im Westen Klinik
+                    Psycho<span class="responsive">-</span><br class="responsive">therapie im Westen Klinik
                 </h2>
                 <p>Welcome to the newest and most dedicated psychotherapy clinic in Aachen.</p>
             </div>
@@ -52,7 +53,7 @@
                 <h2>Treffen Sie Ihren Arzt!</h2>
                 <p>Das ist meine Tante, Ana Maria Tudor. Sie sprichst mehr besser Deutsch als ich.</p>
                 <p>HERE: A picture of Ami in a nice blue border. Until I get a picture of her, here is one of me:</p>
-                <img src="me_placeholder.jpg">
+                <img src="images/me_placeholder.jpg">
             </article>
         </section>
         <section id="behandlungen">
@@ -61,7 +62,7 @@
                 <p>Below you can read some information on treatment types: (everything currently a placeholder)</p>
                 <ol>
                     <li>
-                        <p>Treatment Type 1</p><img src="canapea.jpg">
+                        <p>Treatment Type 1</p><img src="images/canapea.jpg">
                         <ul>
                             <li>Details 1</li>
                             <li>Details 2</li>
@@ -69,7 +70,7 @@
                         </ul>
                     </li>
                     <li>
-                        <p>Treatment Type 2</p><img src="jung.jpg">
+                        <p>Treatment Type 2</p><img src="images/jung.jpg">
                         <ul>
                             <li>Details 1</li>
                             <li>Details 2</li>
@@ -77,7 +78,7 @@
                         </ul>
                     </li>
                     <li>
-                        <p>Treatment Type 3</p><img src="stetoscop.jpg">
+                        <p>Treatment Type 3</p><img src="images/stetoscop.jpg">
                         <ul>
                             <li>Details 1</li>
                             <li>Details 2</li>
@@ -100,7 +101,8 @@
                 <h2>Kontakt</h2>
                 <p>If you would like to get in touch with our clinic we will require some basic information from you.
                 </p>
-                <form method="POST" enctype="multipart/form-data" name="Kontakt Form">
+                <form action="mailto:secovlad@gmail.com" method="POST" enctype="multipart/form-data"
+                    name="Kontakt Form">
                     <div class="row">
                         <label for="name"><strong>Name:</strong> </label>
                         <input type="text" name="name" placeholder="Dein Name">
@@ -115,14 +117,25 @@
                     </div>
                     <div class="row">
                         <label for="insurance"><strong>Insurance Typ:</strong></label>
-                    <div class="row">
-                        <label for="national">National<input type="radio" name="insurance" value="National" class="radiobtn"></label>
-                        <label for="private">Privat<input type="radio" name="insurance" value="Private" class="radiobtn"></label>
-                    </div>
-                    <div class="row">
-                        <button type="submit" onclick="location.href='mailto:secovlad@gmail.com';">Kontakt Dr. Ana Maria</button>
-                    </div>
+                        <div class="row">
+                            <label for="national">National<input type="radio" name="insurance" value="National"
+                                    class="radiobtn"></label>
+                            <label for="private">Privat<input type="radio" name="insurance" value="Private"
+                                    class="radiobtn"></label>
+                        </div>
+                        <div class="row">
+                            <button type="submit"><strong>Kontakt
+                                    Dr. Ana
+                                    Maria</strong></button>
+                        </div>
                 </form>
+            </article>
+        </section>
+        <section id="gdpr-notiz">
+            <article>
+                <h2>GDPR Notice</h2>
+                <p>We are GDPR compliant, only collecting data that we need and deleting it after a while or when it is
+                    no longer needed.</p>
             </article>
         </section>
         <footer id="footer">
